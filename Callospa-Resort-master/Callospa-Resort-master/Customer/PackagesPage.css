@@ -1,0 +1,350 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  color: #000;
+  padding: 20px 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+/* Header Content */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* Header Title */
+.header-title h1,
+.header-title p,
+.main-nav ul li a {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 700;
+}
+
+.header-title h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.header-title p {
+  margin: 5px 0 0;
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Header Navigation */
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav ul li a {
+  color: #000;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.main-nav ul li a:hover {
+  border-bottom: 2px solid #4b4b4b;
+}
+
+.main-nav ul li a.active {
+  background-color: #000;
+  color: #fff;
+  border-bottom: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Hide all images by default */
+.mySlides {
+  display: none;
+}
+
+/* Show images with fade effect */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Add a fade-in animation */
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hero Section */
+.image-section {
+  position: relative;
+  height: 550px;
+  overflow: hidden;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.image-text h1 {
+  font-size: 60px;
+  margin: 0;
+  font-family: "Inknut Antiqua";
+}
+
+.image-text p {
+  font-size: 22px;
+  margin: 10px 0 0;
+  font-family: serif;
+}
+
+/* Sections Wrapper */
+.sections-wrapper {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Section Subtitle */
+.section-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Room List */
+.packages-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Room Card */
+.package {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Room Image */
+.package-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Packages Name */
+.package-name {
+  font-size: 20px;
+  margin: 12px 0 8px;
+  color: #000;
+  font-family: "Inknut Antiqua", serif;
+}
+
+/* Packages Price */
+.package-price {
+  font-family: serif;
+  font-size: 20px;
+  color: #666;
+  margin: 10px 0;
+}
+
+/* Packages Description */
+.package-description {
+  font-family: serif;
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0;
+}
+
+/* Book Now Button */
+.package button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: serif;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.package button:hover {
+  background-color: #444;
+}
+
+/* Footer */
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-start;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-icon {
+  color: #000;
+  text-decoration: none;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.footer-icon:hover {
+  color: #007bff;
+}
+
+.footer-icon .fab {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Footer Contact Information */
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-info {
+  flex: 1;
+  text-align: left;
+}
+
+.contact-info h3 {
+  font-family: "Inknut Antiqua", serif;
+  font-size: 30px;
+  color: black;
+}
+
+.contact-info address {
+  line-height: 1.6;
+}
+
+.contact-info address a {
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-info address a:hover {
+  text-decoration: underline;
+}
+
+/* Map Section */
+.map-container {
+  flex: 1;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.map-container iframe {
+  width: 700px;
+  height: 300px;
+  border: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .room-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .room-list {
+    grid-template-columns: 1fr;
+  }
+}

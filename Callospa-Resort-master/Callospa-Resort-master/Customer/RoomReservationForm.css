@@ -1,0 +1,499 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  color: #000;
+  padding: 20px 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+/* Header Content */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* Header Title */
+.header-title h1,
+.header-title p,
+.main-nav ul li a {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 700;
+}
+
+.header-title h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.header-title p {
+  margin: 5px 0 0;
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Header Navigation */
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav ul li a {
+  color: #000;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.main-nav ul li a:hover {
+  border-bottom: 2px solid #4b4b4b;
+}
+
+.main-nav ul li a.active {
+  background-color: #000;
+  color: #fff;
+  border-bottom: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Hide all images by default */
+.mySlides {
+  display: none;
+}
+
+/* Show images with fade effect */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Add a fade-in animation */
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hero Section */
+.image-section {
+  position: relative;
+  height: 550px;
+  overflow: hidden;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.image-text h1 {
+  font-size: 60px;
+  margin: 0;
+  font-family: "Inknut Antiqua";
+}
+
+.image-text p {
+  font-size: 22px;
+  margin: 10px 0 0;
+  font-family: serif;
+}
+
+/* Reservation Form Section */
+.reservation-form-section {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-form-section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-family: "Inknut Antiqua", serif;
+  color: #333;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.reservation-form-section h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.reservation-form-section h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Inknut Antiqua", serif;
+  color: #333;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.reservation-form-section h3::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.reservation-form-section p {
+  font-size: 14px;
+  color: #555;
+}
+
+.reservation-form-section label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.reservation-form-section input[type="text"],
+.reservation-form-section input[type="tel"],
+.reservation-form-section input[type="email"],
+.reservation-form-section input[type="date"],
+.reservation-form-section input[type="number"],
+.reservation-form-section input[type="handle"],
+.reservation-form-section select,
+.reservation-form-section input[type="file"],
+.reservation-form-section input[type="time"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.reservation-form-section select {
+  cursor: pointer;
+}
+
+.reservation-form-section input[type="radio"] {
+  margin-right: 5px;
+}
+
+.reservation-form-section input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reservation-form-section input[type="submit"]:hover {
+  background-color: #333;
+}
+
+#room-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#room-images img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#room-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Payment Method Section */
+.payment-method-section {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.payment-method-section input[type="radio"] {
+  margin-right: 5px;
+}
+
+.payment-method-section label {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+.payment-method-section #qr-code-section {
+  margin-top: 20px;
+}
+
+.qr-code-image {
+  display: block;
+  margin: 20px 0;
+  max-width: 200px;
+  height: auto;
+}
+
+/* Checkbox and link styling */
+.terms-container {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.terms-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.terms-link {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Modal overlay */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 700px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Heading styling */
+.modal-content h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Close button */
+.close {
+  color: #888;
+  font-size: 36px;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* Modal body styling */
+.modal-content p,
+.modal-content ul {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Checkbox styling */
+.modal-content input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Label styling */
+.modal-content label {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Footer */
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-start;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-icon {
+  color: #000;
+  text-decoration: none;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.footer-icon:hover {
+  color: #007bff;
+}
+
+.footer-icon .fab {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Footer Contact Information */
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-info {
+  flex: 1;
+  text-align: left;
+}
+
+.contact-info h3 {
+  font-family: "Inknut Antiqua", serif;
+  font-size: 30px;
+  color: black;
+}
+
+.contact-info address {
+  line-height: 1.6;
+}
+
+.contact-info address a {
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-info address a:hover {
+  text-decoration: underline;
+}
+
+/* Map Section */
+.map-container {
+  flex: 1;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.map-container iframe {
+  width: 700px;
+  height: 300px;
+  border: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .room-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .room-list {
+    grid-template-columns: 1fr;
+  }
+}
